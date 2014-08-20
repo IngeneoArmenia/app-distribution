@@ -39,14 +39,25 @@ Controller.prototype = {
 				_this.apps = data.apps;
 				for(var i=0; i<_this.apps.length; i++) {
 					var app = _this.apps[i];
+					if(app.platform == 'ios' || app.platform == 'android') {
+						if(app.platform != _this.platform) continue;
+					}
 					var img = 'img/'+app.name+'_'+app.version+'.png';
 					var url;
-					if(_this.platform=='ios') {
+					if(app.platform=='ios') {
 						url =  _this.plistpath+app.name+'_'+app.version+'.plist';
-					} else if(_this.platform=='android') {
+					} else if(app.platform=='android') {
 						url = 'dist/'+app.name+'_'+app.version+'.apk';
-					} else {
+					} else if(app.platform == 'j2me') {
+						url = 'dist/'+app.name+'_'+app.version+'.jar';
+					} else if(app.platform == 'windows') {
+						url = 'dist/'+app.name+'_'+app.version+'.exe'; 
+					} else if(app.platform == 'mac') {
+						url = 'dist/'+app.name+'_'+app.version+'.dmg';
+					} else if(app.platform == 'web') {
 						url = app.url;
+					} else {
+						continue;
 					}
 					var html = '<li class="table-view-cell media">'+
 					    '<a  href="'+url+'" data-ignore="push" target="_blank">'+
