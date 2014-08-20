@@ -5,7 +5,7 @@
 			"name": "dms-android",
 			"description": "DMS",
 			"version": "QA",
-			"platforms": ["android"]
+			"platform": "android"
 		}
 */
 
