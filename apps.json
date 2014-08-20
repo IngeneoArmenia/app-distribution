@@ -1,0 +1,16 @@
+/*Sample app: */
+
+/*
+		{
+			"name": "dms-android",
+			"description": "DMS",
+			"version": "QA",
+			"platforms": ["android"]
+		}
+*/
+
+
+{
+	"base_url" : "https://dl.dropboxusercontent.com/u/10355187/",
+	"apps" : []
+}

@@ -1,0 +1,99 @@
+/* Overthrow CSS:
+ Enable overflow: auto on elements with overthrow class when html element has overthrow class too */
+.overthrow-enabled .overthrow {
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+.overthrow-enabled .sidescroll ul, .overthrow-enabled .sidescroll li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+/* Fix page content when there is a footer */
+.content {
+	padding-bottom: 44px;
+}
+
+/* Alinear imágenes horizontalmente */
+.image-container {
+    height: 120px;     text-align: center;  /* align the inline(-block) elements horizontally */     font: 0/0 a;
+}
+.image-container:before {
+    content: ' ';     display: inline-block;     vertical-align: middle;  /* vertical alignment of the inline element */     height: 100%;
+}
+.image-container>img {
+    display: inline-block;     vertical-align: middle;  /* vertical alignment of the inline element */     font: 16px/1 Arial sans-serif;
+}
+
+/* Slider bond */
+.bond .sale-title {
+	max-width: 109px;
+	text-align: center;
+}
+.bond {
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	width: 100%;
+	overflow-x: scroll;
+}
+.bond-box {
+display: inline-block;
+list-style: none;
+padding: 0;
+overflow: hidden;
+}
+.bond-slide {
+display: inline;
+float: left;
+list-style-type: none;
+display: inline-block;
+max-width: 120px;
+}
+.sale-banner {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+.sale-banner img {
+	max-width: 100%;
+}
+/* Slider Swipe */
+.swipe {
+	overflow: hidden;
+	visibility: hidden;
+	position: relative;
+}
+.swipe-wrap {
+	overflow: hidden;
+	position: relative;
+	margin: auto;
+}
+.swipe-wrap > div {
+	float: left;
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
+.swipe-wrap > div > img {
+	max-width: 100%;
+}
+.bullets-wrap {
+	width: 100%;
+	display: inline-block;
+	height: 15px;
+	position: relative;
+	text-align: center;
+}
+.bullet {
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border: solid 3px #dedede;
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+}
+.bullet.selected {
+	background-color: #dedede
+}

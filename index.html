@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" type="text/css" href="ratchet/css/ratchet.min.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="ratchet/css/ratchet-theme-android.min.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="ratchet/css/ratchet-theme-ios.min.css" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/style-custom.css" />
+
+    <script type="text/javascript" src="js/lib/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="ratchet/js/ratchet.min.js"></script>
+    <!-- <script type="text/javascript" src="js/lib/jquery.noclickdelay.js"></script> -->
+    <script type="text/javascript" src="js/lib/overthrow.sidescroller.min.js"></script>
+    <script type="text/javascript" src="js/lib/swipe.js"></script>
+    <script type="text/javascript" src="js/controller.js"></script>
+
+    <title>Versiones preliminares de aplicaciones en ios</title>
+</head>
+<body>
+    
+
+    <header class="bar bar-nav">
+            <h1 class="title">
+              Aplicaciónes móviles para ios
+            </h1>
+      </header>
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+        <p class="content-padded">
+            Si ya nos proporcionaste tu udid, puedes descargar la versión preliminar las aplicaciónes únicamente haciendo click en el siguiente enlace.
+        </p>
+      <h4 class="content-padded">Aplicaciones móviles</h4>
+      <div class="card">
+        <ul class="table-view" id="wrapper-apps">
+          
+        </ul>
+      </div>
+    </div>
+
+<div id="myPopover" class="popover">
+  <header class="bar bar-nav">
+    <h1 class="title">Popover title</h1>
+  </header>
+  <ul class="table-view">
+    <li class="table-view-cell">Item1</li>
+    <li class="table-view-cell">Item2</li>
+    <li class="table-view-cell">Item3</li>
+    <li class="table-view-cell">Item4</li>
+    <li class="table-view-cell">Item5</li>
+    <li class="table-view-cell">Item6</li>
+    <li class="table-view-cell">Item7</li>
+    <li class="table-view-cell">Item8</li>
+  </ul>
+</div>
+<div id="settings" class="modal">
+    <header class="bar bar-nav">
+        <a class="icon icon-close pull-right" href="#settings"></a>
+        <h1 class="title">Configuración</h1>
+    </header>
+
+    <div class="content">
+        <p class="content-padded">Configure el comportamiento de la app de acuerdo a sus preferencias.</p>
+        <div class="segmented-control">
+          <a class="control-item active" href="#settings-notification">
+            Notificaciones
+          </a>
+          <a class="control-item" href="#settings-preferences">
+            Preferencias
+          </a>
+        </div>
+        <div class="card">
+            <div id="settings-notification" class="control-content active">
+                <ul class="table-view">
+                    <li class="table-view-cell">Todas las promociones 
+                        <div class="toggle">
+                            <div class="toggle-handle"></div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="table-view" id="wrapper-config-notificaciones">
+                    <li class="table-view-divider">Categorias</li>
+                    <li class="table-view-cell">Moda 
+                        <div class="toggle">
+                            <div class="toggle-handle"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="settings-preferences" class="control-content">
+                <ul class="table-view">
+                    <li class="table-view-divider">Tarjetas</li>
+                    <li class="table-view-cell">Item 1 <button class="btn">Button</button></li>
+                    <li class="table-view-cell">Item 2 <button class="btn btn-primary">Button</button></li>
+                    <li class="table-view-cell">Item 3 <button class="btn btn-positive">Button</button></li>
+                    <li class="table-view-cell">Item 4 <button class="btn btn-negative">Button</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Icons in standard bar fixed to the bottom of the screen -->
+<div class="bar bar-standard bar-footer" style="text-align: center;">
+    <a href="http://www.ingeneo.com.co"><img src="http://ingeneo.com.co/images/stories/logo_ingeneo.png" height="40px" alt="Logo de Ingeneo"></a>
+</div>
+
+</body>
+</html>
