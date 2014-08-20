@@ -49,7 +49,7 @@ Controller.prototype = {
 					if(app.platform=='ios') {
 						//var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname;
 						//force https
-						var newURL = "https" + "//" + window.location.host + "/";
+						var newURL = "https:" + "//" + window.location.host + "/";
 						var aux = window.location.pathname.replace('index.html','');
 						newURL = newURL + aux + 'dist/' + app.name+'_'+app.version+'.plist';
 						url =  _this.plistpath+newURL;
