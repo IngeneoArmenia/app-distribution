@@ -12,5 +12,12 @@
 
 {
 	"base_url" : "https://dl.dropboxusercontent.com/u/10355187/",
-	"apps" : []
+	"apps" : [
+		{
+			"name": "dms-android",
+			"description": "DMS",
+			"version": "QA",
+			"platform": "android"
+		},
+	]
 }
