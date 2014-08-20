@@ -11,6 +11,7 @@ $(document).ready(function(){
 		   href: "ratchet/css/ratchet-theme-ios.min.css"
 		}).appendTo("head");
 		p='ios';
+		$('.lbl-platform').text(p);
     } else {
     	var android = platform.match(/(android)/);
     	if(android) {
@@ -22,6 +23,7 @@ $(document).ready(function(){
 			p='android';
     	}
     }
+	$('.lbl-platform').text(p);
     m_controller = new Controller(p);
     m_controller.init();
 });
