@@ -52,7 +52,7 @@ Controller.prototype = {
 						var newURL = "https:" + "//" + window.location.host + "/";
 						var aux = window.location.pathname.replace('index.html','');
 						newURL = newURL + aux + 'dist/' + app.name+'_'+app.version+'.plist';
-						url =  _this.plistpath+newURL;
+						url =  _this.plistpath+encodeURIComponent(newURL);
 					} else if(app.platform=='android') {
 						url = 'dist/'+app.name+'_'+app.version+'.apk';
 					} else if(app.platform == 'j2me') {
@@ -66,8 +66,9 @@ Controller.prototype = {
 					} else {
 						continue;
 					}
+					url = encodeURI(url);
 					var html = '<li class="table-view-cell media">'+
-					    '<a  href="'+encodeURI(url)+'" data-ignore="push" target="_blank">'+
+					    '<a  href="'+url+'" data-ignore="push" target="_blank">'+
 					      '<img class="media-object pull-left" src="'+img+'" width="35" height="35">'+
 					      '<div class="media-body">'+app.name+
 					        '<p>'+app.description+'</p>'+
