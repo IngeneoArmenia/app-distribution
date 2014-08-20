@@ -24,7 +24,7 @@ Distribución de versiones beta de aplicaciones para el grupo de pruebas de Inge
 
 Cada aplicación tiene una plataforma.
 
-Si por ejemplo un usuario ingresa al sitio (http://ingeneoarmenia.github.com/app-distribution) desde un dispositivo ios, podrá acceder a las aplicaciones de plataforma web y las de ios. 
+Si por ejemplo un usuario ingresa al sitio (https://ingeneoarmenia.github.com/app-distribution) desde un dispositivo ios, podrá acceder a las aplicaciones de plataforma web y las de ios. 
 De igual forma los usuarios que accedan desde android, podrán acceder a las aplicaciones de android y las aplicaciones web.
 
 
@@ -44,7 +44,7 @@ web | none*
 	        "name": "app distribution",
 	        "description": "Distribución de aplicaciones",
 	        "version": "1",
-	        "url": "http://ingeneoarmenia.github.io/app-distribution/"
+	        "url": "https://ingeneoarmenia.github.io/app-distribution/"
 	        "platform": "web"
 	},
 ```
