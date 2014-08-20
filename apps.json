@@ -19,5 +19,11 @@ window.apps = {
 			"version": "QA",
 			"platform": "android"
 		},
+		{
+			"name": "Smart Saving",
+			"description": "Descuentos con tarjetas de fidelización",
+			"version": "QA",
+			"platform": "android"
+		},
 	]
 }
