@@ -35,10 +35,7 @@ var Controller = function(p) {
 Controller.prototype = {
 	init : function() {
 		var _this = this;
-		$.ajax({
-	 		dataType: "json",
-			url: "apps.json",
-			success: function(data) {
+		var data = window.apps;
 				_this.apps = data.apps;
 				for(var i=0; i<_this.apps.length; i++) {
 					var app = _this.apps[i];
@@ -61,11 +58,7 @@ Controller.prototype = {
 					  '</li>';
 					$('#wrapper-apps').append(html);
 				}
-			},
-			error: function(){
-				alert('Error');
-			}
-		});
+			
 	},
 	addApplication : function() {
 

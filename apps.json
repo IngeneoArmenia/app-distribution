@@ -10,7 +10,7 @@
 */
 
 
-{
+window.apps = {
 	"base_url" : "https://dl.dropboxusercontent.com/u/10355187/",
 	"apps" : [
 		{
