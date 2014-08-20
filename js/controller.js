@@ -62,7 +62,7 @@ Controller.prototype = {
 						continue;
 					}
 					var html = '<li class="table-view-cell media">'+
-					    '<a  href="'+url+'" data-ignore="push" target="_blank">'+
+					    '<a  href="'+encodeURI(url)+'" data-ignore="push" target="_blank">'+
 					      '<img class="media-object pull-left" src="'+img+'" width="35" height="35">'+
 					      '<div class="media-body">'+app.name+
 					        '<p>'+app.description+'</p>'+
