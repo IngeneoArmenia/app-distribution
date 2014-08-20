@@ -31,7 +31,7 @@ $(document).ready(function(){
 var Controller = function(p) {
 	this.apps = null;
 	this.baseurl = null;
-	this.plistpath = "itms-services://?action=download-manifest&url=dist/";
+	this.plistpath = "itms-services://?action=download-manifest&url=";
 	this.platform = p;
 }
 Controller.prototype = {
@@ -51,7 +51,7 @@ Controller.prototype = {
 						//force https
 						var newURL = "https" + "//" + window.location.host + "/";
 						var aux = window.location.pathname.replace('index.html','');
-						newURL = newURL + aux + app.name+'_'+app.version+'.plist';
+						newURL = newURL + aux + 'dist/' + app.name+'_'+app.version+'.plist';
 						url =  _this.plistpath+newURL;
 					} else if(app.platform=='android') {
 						url = 'dist/'+app.name+'_'+app.version+'.apk';
