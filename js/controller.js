@@ -47,7 +47,12 @@ Controller.prototype = {
 					var img = 'img/'+app.name+'_'+app.version+'.png';
 					var url;
 					if(app.platform=='ios') {
-						url =  _this.plistpath+app.name+'_'+app.version+'.plist';
+						//var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname;
+						//force https
+						var newURL = "https" + "//" + window.location.host + "/";
+						var aux = window.location.pathname.replace('index.html','');
+						newURL = newURL + aux + app.name+'_'+app.version+'.plist';
+						url =  _this.plistpath+newURL;
 					} else if(app.platform=='android') {
 						url = 'dist/'+app.name+'_'+app.version+'.apk';
 					} else if(app.platform == 'j2me') {
