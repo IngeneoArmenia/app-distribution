@@ -43,5 +43,11 @@ window.apps = {
 			"version": "0.1",
 			"platform": "ios"
 		},
+		{
+			"name": "FestivalLuces",
+			"description": "Medellín, Un Festival de Luces",
+			"version": "0.1",
+			"platform": "android"
+		},
 	]
 }
