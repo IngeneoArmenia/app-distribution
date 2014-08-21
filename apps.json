@@ -31,5 +31,17 @@ window.apps = {
 			"version": "QA",
 			"platform": "ios"
 		},
+		{
+			"name": "Galerias",
+			"description": "Centro Comercial Galerias Plaza",
+			"version": "0.1",
+			"platform": "android"
+		},
+		{
+			"name": "Galerias",
+			"description": "Centro Comercial Galerias Plaza",
+			"version": "0.1",
+			"platform": "ios"
+		},
 	]
 }
